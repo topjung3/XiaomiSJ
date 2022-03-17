@@ -59,15 +59,6 @@ metadata {
         standardTile("open", "open", width: 2, height: 2, inactiveLabel: false, decoration: "flat") {
             state("open", label: 'open', action: "windowShade.open", icon: "st.contact.contact.open")
         }
-        standardTile("close", "close", width: 2, height: 2, inactiveLabel: false, decoration: "flat") {
-            state("close", label: 'close', action: "windowShade.close", icon: "st.contact.contact.closed")
-        }
-        standardTile("stop", "stop", width: 2, height: 2, inactiveLabel: false, decoration: "flat") {
-            state("stop", label: 'stop', action: "Pause", icon: "st.illuminance.illuminance.dark")
-        }
-        standardTile("refresh", "command.refresh", width: 2, height: 2, inactiveLabel: false, decoration: "flat") {
-            state "default", label: " ", action: "refresh.refresh", icon: "https://www.shareicon.net/data/128x128/2016/06/27/623885_home_256x256.png"
-        }
         valueTile("battery", "device.battery", inactiveLabel: false, width: 2, height: 2) {
             state "battery", label:'${currentValue}%', unit:"%", icon:"https://raw.githubusercontent.com/bspranger/Xiaomi/master/images/XiaomiBattery.png",
             backgroundColors:[
