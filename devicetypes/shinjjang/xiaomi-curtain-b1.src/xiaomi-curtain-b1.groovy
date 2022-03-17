@@ -36,9 +36,11 @@ metadata {
 
     
     preferences {
-          input name: "mode", type: "bool", title: "Xiaomi Curtain Direction Set", description: "Reverse Mode ON", required: true,
-             displayDuringSetup: true
-   }    
+        input name: "mode", type: "bool", title: "Xiaomi Curtain Direction Set", description: "Reverse Mode ON", required: true,
+            displayDuringSetup: true
+        input name: "mode2", type: "bool", title: "Test", description: "Test", required: false,
+            displayDuringSetup: false
+    }
 
     tiles(scale: 2) {
         multiAttributeTile(name: "windowShade", type: "generic", width: 6, height: 4) {
